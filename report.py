@@ -4,6 +4,9 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from naive_plot import naive_plot
+from tree_plot import tree_plot
+from knn_plot import knn_plot
 
 dataset = pd.read_csv('card_transdata.csv')
 
@@ -58,3 +61,7 @@ print("\n\nResultados para KNN:")
 print_confusion_matrix_with_labels(confusion_knn)
 print("\nRelatório de Classificação:\n", classification_rep_knn)
 print("\nAcurácia do modelo:", accuracy_knn)
+
+#naive_plot()
+#tree_plot()
+#knn_plot()
